@@ -10,7 +10,7 @@ node {
 	
 	stage('SonarQube Analysis') {
 	
-	              withSonarQubeEnv('My SonarQube Server') {
+	              withSonarQubeEnv('Sonarqube') {
 	              bat "C:/Users/130736/Downloads/sonar-scanner-3.0.3.778-windows/bin/sonar-scanner"
 	              }
 	       }
