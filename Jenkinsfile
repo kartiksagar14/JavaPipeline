@@ -24,7 +24,7 @@ node {
 	     
 	        catch(exc) {
 	       stage('JiraBugLog'){
-	       withEnv(['JIRA_SITE=LOCAL']){
+	       withEnv(['JIRA_SITE=JIRA']){
 	              def testIssue = [fields: [ project: [key: 'KS'],
 	                           summary: 'New JIRA Created from Jenkins.',
 	                           description: 'New JIRA Created from Jenkins.',
